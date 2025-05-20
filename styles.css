@@ -1,13 +1,69 @@
 body {
     background-color: #eadcd8;
+    font-family: "DejaVu Sans Mono", monospace;
 }
 
 h1 {
-    color: #783332;
+    color: #363349;
     text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bio {
     font-size: large;
     text-align: justify;
+}
+
+.hobbies h3 {
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+.hobbies li {
+    margin-left: -20px;
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imgJogo {
+    border-radius: 10px;
+    width: 40%;
+    height: auto;
+}
+
+.textImgJogo {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+table {
+    border: black 2px solid;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: black 2px solid;
+    text-align: center;
+}
+
+td {
+    padding: 7px;
+}
+
+.imgTable {
+    border-radius: 5px;
+    width: 320px; 
+    height: 240px;
+}
+
+a:hover {
+    color: #cf523f;
 }

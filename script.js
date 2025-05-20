@@ -1,19 +1,22 @@
-let contador = 0;
-
 /*
 
-Se o botão já tiver sido pressionado nada irá acontencer.
+Se o botão já tiver sido pressionado o próximo clique irá remover a mensagem da tela.
 
 */
 
 function exibeMensagem() {
-  if (contador == 0 ) {
-    const botao = document.getElementById("botao");
-    const novoParagrafo = document.createElement("p");
-    novoParagrafo.textContent = "Foque apenas em sua arte (essa é minha filosofia de vida!).";
-    novoParagrafo.classList.add("novoParagrafo");
-    botao.insertAdjacentElement("afterend", novoParagrafo);
+  const novoParagrafo = document.querySelector(".novoParagrafo");
 
-    contador++;
+  if (novoParagrafo == undefined) {
+    const botao = document.getElementById("botao");
+
+    const novoParagrafo = document.createElement("p");
+
+    novoParagrafo.innerHTML = "<i>Foque apenas em sua arte ﾒ</i> <strong>(essa é minha filosofia de vida!)</strong>.";
+    novoParagrafo.classList.add("novoParagrafo");
+
+    botao.insertAdjacentElement("afterend", novoParagrafo);
+  } else {
+    novoParagrafo.remove();
   } 
 } 

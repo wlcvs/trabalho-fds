@@ -6,35 +6,47 @@
   <title>Trabalho de FDS</title>
 </head>
 <body>
-  <h1>Wallacy Vieira da Silva</h1>
-  <p class="bio">Me chamo Wallacy Vieira da Silva, tenho 21 anos, moro na cidade de Carapicuíba em São Paulo e gosto de tecnologia, mangás e jogos.</p>
-  <button id="botao" onclick="exibeMensagem()">Clique para ver uma mensagem!</button>
-  <h3>Os meus hobbies são:</h3>
-  <ul>
-    <li>Programar</li>
-    <li>Ler mangás</li>
-    <li>Jogar</li>
-  </ul>
-  <img src="imagens/Armored_Core.jpg" alt="Armored Core meu jogo favorito no momento." width="1280" height="720"> 
-  <table>
-    <tr>
-      <th>País</th>
-      <th>Foto</th>
-    </tr>
-    <tr>
-      <td>China</td>
-      <td><img src="imagens/Shenzen.jpg" alt="Foto de Shenzen, a cidade mais tecnológica da China." width="320" height="240"></td>
-    </tr>
-    <tr>
-      <td>Alemanha</td>
-      <td><img src="imagens/Berlim.jpg" alt="Foto de Berlim" width="320" height="240"></td>
-    </tr>
-    <tr>
-      <td>Japão</td>
-      <td><img src="imagens/Japao.jpg" alt="Imagem do Japão" width="320" height="240"></td>
-    </tr>
-  </table>
-  <p>Um site que eu gosto de visitar para me atualizar sobre o mundo da tecnologia e descobrir umas curiosidades interessantes é o <a href="https://meiobit.com/" target="_blank">Meio Bit</a>.</p>
+  <header>
+    <h1>Wallacy Vieira da Silva</h1>
+  </header>
+  <main>
+    <p class="bio">Me chamo Wallacy Vieira da Silva, tenho 21 anos, moro na cidade de Carapicuíba em São Paulo e gosto de tecnologia, mangás e jogos.</p>
+    <button id="botao" onclick="exibeMensagem()">Clique para ver uma mensagem!</button>
+    <section class="hobbies">
+      <h3>Os meus hobbies são:</h3>
+      <ul>
+        <li>Programar</li>
+        <li>Ler mangás</li>
+        <li>Jogar</li>
+      </ul>
+   </section>
+    <img class="imgJogo" src="imagens/Armored_Core.jpg" alt="Imagem do jogo Armored Core VI: Fires of Rubicon."> 
+    <p class="textImgJogo">Armored Core meu jogo favorito no momento.</p>
+    <table>
+      <caption><h3>Os países que eu ainda vou visitar!</h3></caption>
+      <thead>
+        <tr>
+          <th>País</th>
+          <th>Foto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>China</td>
+          <td><img class="imgTable" src="imagens/Shenzen.jpg" alt="Foto de Shenzen, a cidade mais tecnológica da China."></td>
+        </tr>
+        <tr>
+          <td>Alemanha</td>
+          <td><img class="imgTable" src="imagens/Berlim.jpg" alt="Foto da Catedral de Berlim."></td>
+        </tr>
+        <tr>
+          <td>Japão</td>
+          <td><img class="imgTable" src="imagens/Japao.jpg" alt="Imagem de uma cerejeira com o Monte Fuji ao fundo, no Japão."></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Um site que eu gosto de visitar para me atualizar sobre o mundo da tecnologia e descobrir umas curiosidades interessantes é o <a href="https://meiobit.com/" target="_blank">Meio Bit</a>.</p>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
